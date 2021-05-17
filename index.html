@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<meta charset="utf8">
+		<TITLE> Strona ze zdjęciami </TITLE>
+	</HEAD>
+
+	<BODY>
+			
+		<H1> Moje zdjęcia </H1>
+		<FORM  NAME="background">
+			<INPUT  TYPE="button"  VALUE="Zdjęcie 1"  ONCLICK="z1()">
+			<INPUT  TYPE="button"  VALUE="Zdjęcie 2"  ONCLICK="z2()">
+			<INPUT  TYPE="button"  VALUE="Zdjęcie 3"  ONCLICK="z3()">
+			<INPUT  TYPE="button"  VALUE="Zdjęcie 4"  ONCLICK="z4()">
+			<br>
+		</FORM> 
+		
+		<DIV id="ramka">
+			<IMG src="zdjecia/z1.jpg">
+		</DIV>
+		
+		<SCRIPT  Language="JavaScript">	
+			function z1(){
+				document.getElementById('ramka').innerHTML = "<IMG src='zdjecia/z1.jpg'>"
+			}
+			function z2(){
+				document.getElementById('ramka').innerHTML = "<IMG src='zdjecia/z2.jpg'>"
+			}
+			function z3(){
+				document.getElementById('ramka').innerHTML = "<IMG src='zdjecia/z3.jpg'>"
+			}
+			function z4(){
+				document.getElementById('ramka').innerHTML = "<IMG src='zdjecia/z4.jpg'>"
+			}
+		</SCRIPT>
+	</BODY>
+</HTML>
